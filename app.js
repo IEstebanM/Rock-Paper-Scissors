@@ -26,7 +26,7 @@
         function computerPlay(computerSelector) {
             
             computerSelection = computerSelector[Math.floor(Math.random()*computerSelector.length)]; 
-                
+            console.log("COMPUTER CHOSE " + computerSelection);  
         }
         
 
@@ -40,13 +40,15 @@
                 (playerSelection == "ROCK" && computerSelection == "SCISSORS") ||
                 (playerSelection == "PAPER" && computerSelection == "ROCK") ||
                 (playerSelection == "SCISSORS" && computerSelection == "PAPER") ) {
+                    console.log("YOU EARN A POINT!")
                     scorePlayer += 1;
                 }                
 
             else if ((computerSelection == "ROCK" && cplayerSelection == "SCISSORS") ||
                     (computerSelection == "PAPER" && playerSelection == "ROCK") ||
                     (computerSelection == "SCISSORS" && playerSelection == "PAPER") ) {
-                    scoreComputer += 1;
+                        console.log("YOU EARN A POINT!")
+                        scoreComputer += 1;
                 }
             
         }
