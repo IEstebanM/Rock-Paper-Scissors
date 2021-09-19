@@ -3,11 +3,41 @@
     <head>
             <title>Rock, Paper and Scissors</title>
             <meta charset="UTF-8" />
-
+			<link type="text/css" rel="stylesheet" href="css/style.css">
         </head>
 
     <body>
         <script type="text/javascript" src="app.js"></script>
+		<div class="flex_container">
+			<div><h3>PLAYER 1</h3></div>
+			<div class="score"><h3 ><span id="scoreTextPlayer">0</span>  -  <span id="scoreTextComputer">0</span></h3></div>
+			<div><h3>COMPUTER</h3></div>
+		</div>
+		
+		<div id="titleDiv" class="flex_body">
+			<div><h1 id="titleDivH1">ROCK, PAPER AND SCISSORS</h1>
+				<h3 id="titleDivH3">First To 5 Wins!</h3>
+		</div>
+			<div> <button id="buttonMain" type="button" onclick="gameStartButton()">PLAY</button> </div>
+		</div>
+		
+		<div id="gameDiv" class="flex_game">
+			
+			<div id="titleGame"><h1 id="titleGameH1">SELECT ONE!</h1></div>
+			<div id="selector">
+				<div><img src="img/rock.png" onclick="handSelected('ROCK')"></div>
+				<div><img src="img/paper.png" onclick="handSelected('PAPER')"></div>
+				<div><img src="img/scissors.png" onclick="handSelected('SCISSORS')"></div>
+			</div>
+			
+			<div id="playingBox">
+				<div id="humanHandImg"><img id="imgHandHuman" src="img/rock.png"></div>
+				<h1>VS</h1>
+				<div id="computerHandImg"><img id="imgHandComputer" src="img/rock.png"></div>
+			</div>
+		</div>
+		
+		
     </body>
 </html>
 
